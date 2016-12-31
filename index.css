@@ -1,0 +1,39 @@
+.hexagon {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 1px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.hexagon:before {
+  float: left;
+  content: "\2B21";
+  font-size: 120px;
+  color: #fbe348;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.hexagon:hover:before {
+  content: "\2B22";
+  font-size: 120px;
+  fill: #fbe348;
+}
+
+.hexagon-row {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    text-align: center;
+    clear: hexagon;
+}
+
+.hexagon.evens {
+   margin-left: -50px;
+   margin-right: -50px;
+   margin-top: 86px;
+}
